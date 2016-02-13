@@ -71,14 +71,6 @@ gulp.task('css', function() {
         .pipe(gulp.dest('public/assets/stylesheets'));
         
 });
-gulp.task('compress', function() {
-  return gulp.src('source/javascript/**/*.js')
-  	.pipe(sourcemaps.init())
-	.pipe(concat('bundle.js'))
-    .pipe(uglify())
-	.pipe(sourcemaps.write())
-    .pipe(gulp.dest('public/assets/javascript/vendor'));
-});
 
 gulp.task('server', ['webserver', 'livereload', 'watch'], function () {});
 
