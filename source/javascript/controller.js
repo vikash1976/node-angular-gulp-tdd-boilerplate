@@ -22,6 +22,6 @@ myApp.controller('myCtrl', ['$scope', 'DataService', function($scope, dataServic
 		//$scope.password.length > 8 ? 'strong' : 'weak';
 		//dataService.gradePassword($scope.password);
 		
-		console.log('Password is: '+$scope.strength);
+		console.log('Password strenth is: '+$scope.strength);
 	};
 }]);
